@@ -15,7 +15,9 @@ header {
   width: 100%; 
   box-sizing: border-box; 
   font-family: 'Poppins', sans-serif;
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  top:0;
 
 }
 
@@ -47,10 +49,10 @@ nav a:hover {
 
 .box {
   width: 90%; /* Set the width of the box */
-  height: 100%; /* Set the height of the box */
   border: 2px solid rgba(221, 221, 221, 0.5);
-  padding: 20px 20px 20px;
-  margin: 20px auto; /* Set top and bottom margin to 20px, and left and right margins to auto */
+  padding: 20px;
+  margin: 100px auto 20px; /* Center horizontally and set top margin to 100px and bottom margin to 20px */
+  align-items: center;
   color: #ddd;
 }
 
@@ -107,4 +109,13 @@ h5{
 
 .social-media ul li a:hover {
   text-decoration: underline;
+}
+
+footer {
+  background-color: #544343; /* Background color */
+  color: #ffffff;
+  text-align: center; /* Center align text */
+  padding: 2px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
 }
